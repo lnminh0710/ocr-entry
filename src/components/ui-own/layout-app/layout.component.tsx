@@ -52,7 +52,7 @@ const Layout: React.FC = ({ children }) => {
 
     loadFont();
 
-    runFirstLoad();
+    //runFirstLoad();
   }, [loadData]);
 
   return (

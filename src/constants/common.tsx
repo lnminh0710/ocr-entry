@@ -2,7 +2,7 @@ export const API_ENDPOINT = process.env.REACT_APP_API_ENDPOINT;
 
 export const API_REQUEST = "API_REQUEST";
 
-export const JWT_THE_KEY_OF_THE_LIFE = "s_i_love_my_life";
+export const JWT_THE_KEY_OF_THE_LIFE = "ocr-entry";
 
 export const ID_EMPTY = "new";
 

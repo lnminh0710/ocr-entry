@@ -82,7 +82,7 @@ export const colors = [
   }
 ];
 
-const APP_ID = "dfo_is_best_best";
+const APP_ID = "ocr_data_entry";
 
 export enum MODE_THEME {
   DARK = "dark",

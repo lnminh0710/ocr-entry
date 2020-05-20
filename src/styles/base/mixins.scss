@@ -1,0 +1,5 @@
+@mixin animated($name, $duration: 1s, $fill-mode: both) {
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-fill-mode: $fill-mode;
+}

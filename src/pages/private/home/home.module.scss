@@ -1,0 +1,18 @@
+@import "../../../styles/base/main.scss";
+@import "../../../styles/modules/list.scss";
+
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.roles {
+  margin-top: $gutter-container;
+  width: 400px;
+}
+
+.hintError {
+  margin-top: $gutter-container;
+}

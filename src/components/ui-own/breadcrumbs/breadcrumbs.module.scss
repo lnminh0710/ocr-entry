@@ -1,0 +1,23 @@
+@import "styles/base/main.scss";
+
+.breadcrumbs {
+  margin-bottom: $gutter-container !important;
+  display: flex;
+  a,
+  li,
+  p {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    svg {
+      margin-right: $gutter-component/2;
+    }
+  }
+  a:hover {
+    text-decoration-line: underline;
+  }
+
+  p {
+    cursor: auto !important;
+  }
+}

@@ -1,0 +1,41 @@
+@import "../../../styles/base/main.scss";
+@import "../../../styles/base/mixins.scss";
+@import "../../../styles/base/animation/fading_entrances/fadeInDown.scss";
+
+.header {
+  box-shadow: none !important;
+  color: #5a5a5a !important;
+  @include animated(fadeInDown);
+
+  &--stop {
+    animation-name: unset;
+  }
+
+  &__title {
+    flex-grow: 1;
+  }
+
+  &__settings {
+    width: 30px !important;
+    height: 30px !important;
+  }
+}
+
+$height-appbar: 48px;
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  @include animated(fadeIn);
+}
+
+.body--has-login {
+  padding: #{$gutter-container + $height-appbar} $gutter-container $gutter-container
+    $gutter-container;
+  height: 100%;
+}
+
+.body--not-login {
+  margin-top: 0;
+  height: 100%;
+}

@@ -1,0 +1,46 @@
+@import "../../../../styles/base/main.scss";
+
+.capture {
+    height: 100%;
+    &__field-container {
+        display: flex;
+        align-items: center;
+        &.selected {
+            padding: 0 5px;
+        }
+    }
+    &__empty {
+        height: 500px;
+        width: 100%;
+    }
+}
+
+.field {
+    &__container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__name {
+        width: 100px;
+        text-align: center;
+    }
+
+    &__input-container {
+        margin: $gutter-component;
+        flex: 0 0 45px;
+        width: calc(100% - 32px);
+        display: flex;
+        // background: $background-color-lv0;
+        border-radius: $border-radius-component;
+        align-items: center;
+        flex: 1;
+        border: $border-solid-1px;
+    }
+
+    &_input {
+        flex: 1;
+        margin-left: $gutter-component;
+    }
+}

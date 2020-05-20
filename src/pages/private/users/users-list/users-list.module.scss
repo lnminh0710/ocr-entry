@@ -1,0 +1,10 @@
+@import "../../../../styles/base/main.scss";
+@import "../../../../styles/modules/list.scss";
+
+.root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: $gutter-container;
+}

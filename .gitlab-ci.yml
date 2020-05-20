@@ -1,0 +1,31 @@
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+stages:
+  - build
+  - deploy
+
+push-container:
+  stage: build
+  image: docker:18-dind
+  services:
+    - docker:18-dind
+  script:
+    - docker build -t tdungnguyen/jiapu-frontend-web:$CI_COMMIT_SHA .
+    - docker login -u $DOCKERHUB_REGISTRY_USER -p $DOCKERHUB_REGISTRY_PW
+    - docker push tdungnguyen/jiapu-frontend-web:$CI_COMMIT_SHA
+  only:
+    - master
+    - develop
+  
+deploy-k8s:
+  stage: deploy
+  image: 
+    name: tdungnguyen/kubectl:alpine
+    entrypoint: [""]
+  script:
+    - export KUBECONFIG=config
+    - echo $KUBE_CONFIG_64 | base64 -d > $KUBECONFIG
+    - kubectl set image deployment j-webapp j-webapp=tdungnguyen/jiapu-frontend-web:$CI_COMMIT_SHA
+  only:
+    - master

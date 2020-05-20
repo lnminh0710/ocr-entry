@@ -1,0 +1,27 @@
+@import "../../../styles/base/main.scss";
+
+.layout {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+
+  &__body {
+    flex: 1;
+    display: flex;
+  }
+
+  &__column {
+    border-radius: $border-radius-container;
+  }
+
+  &__column--list {
+    flex: 0 0 30%;
+    margin-right: $gutter-container / 2;
+  }
+
+  &__column--detail {
+    flex: 1;
+    margin-left: $gutter-container / 2;
+    padding: $gutter-component;
+  }
+}

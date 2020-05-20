@@ -1,0 +1,55 @@
+@import "../../../styles/base/main.scss";
+
+.grid {
+  padding-bottom: $gutter-component;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__filter {
+    flex: 0 0 36px;
+    display: flex;
+    align-items: center;
+    margin-bottom: $gutter-container;
+
+    &_count {
+      flex: 1;
+      display: flex;
+
+      &_number {
+        margin-right: $gutter-base;
+      }
+    }
+
+    &_action {
+      display: flex;
+      justify-content: flex-end;
+      flex: 1;
+    }
+  }
+
+  &__table {
+    flex: 1;
+  }
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $gutter-component !important;
+
+  &_text {
+    flex: 1;
+    padding: 0 $gutter-component !important;
+  }
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  padding-left: $gutter-component;
+  margin-right: $gutter-component;
+  border-radius: $border-radius-component;
+}

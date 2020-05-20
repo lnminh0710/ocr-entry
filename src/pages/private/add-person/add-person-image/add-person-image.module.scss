@@ -1,0 +1,23 @@
+.add-person-image {
+  height: 100%;
+  //BEGIN empty image
+  &-empty {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__main {
+      font-size: 20px;
+      margin-bottom: 20%;
+    }
+    &__image {
+      background: url("../../../../styles/images/empty.png") center no-repeat;
+      height: 270px;
+      margin-bottom: 50px;
+    }
+    &__title {
+      font-size: 20px;
+    }
+  }
+  //END
+}

@@ -1,0 +1,87 @@
+@import "../../../../styles/base/main.scss";
+
+.document {
+  // State === 0
+  &__hide {
+    position: absolute;
+    bottom: -20px;
+    left: calc(50% - 125px);
+    height: 40px;
+    background-color: #673ab7;
+    border: $border-solid-1px;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+
+    width: 250px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    &:hover {
+      bottom: -2px;
+      transition: bottom cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+    }
+  }
+  // State === 1
+  &__show {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: calc(35% - 2px);
+    width: 100%;
+    border-top: $border-solid-2px;
+  }
+
+  // SHow
+  &__header {
+    height: 40px;
+    // background-color: $background-color-lv4;
+    border-bottom: $border-solid-1px;
+    display: flex;
+    align-items: center;
+    padding-right: 12px;
+    &-button {
+      // margin-left: 5px;
+      float: right;
+      .push-pin {
+        background: url("../../../../styles/images/push-pin.png") center
+          no-repeat;
+        height: 16px;
+        width: 16px;
+        &.pinned {
+          transform: rotate(-46deg);
+        }
+      }
+
+      &-add {
+        float: left;
+      }
+    }
+    &-space {
+      flex: 1;
+      text-align: center;
+    }
+  }
+  &__grid {
+    height: calc(100% - 40px);
+  }
+
+  &__row {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-bottom: 1px solid $background-color-lv4;
+    border-right: 1px solid $background-color-lv4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__header-row {
+    user-select: none;
+    cursor: unset;
+  }
+}

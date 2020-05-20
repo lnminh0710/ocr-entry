@@ -1,0 +1,55 @@
+@import "styles/base/main";
+
+.login {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-position: center;
+
+  &__app-name {
+    position: fixed;
+    top: $gutter-tripple-base;
+    left: $gutter-tripple-base;
+    height: 35px;
+    width: 220px;
+
+    &--mobile {
+      top: 0;
+      left: 0;
+      position: relative;
+      margin-bottom: $gutter-tripple-base;
+    }
+  }
+
+  form {
+    width: 80%;
+    max-width: 350px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: $gutter-container;
+  }
+
+  h5 {
+    margin-bottom: $gutter-tripple-base !important;
+  }
+
+  &_forgot_password {
+    margin-bottom: $gutter-container;
+  }
+
+  h5 {
+    margin-bottom: $gutter-tripple-base !important;
+  }
+
+  &__field {
+    margin-bottom: $gutter-component !important;
+
+    i {
+      color: $secondary-text-color;
+    }
+  }
+}

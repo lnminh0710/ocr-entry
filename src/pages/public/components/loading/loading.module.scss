@@ -1,0 +1,13 @@
+@import "styles/base/main";
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: $gutter-container 0;
+
+  &_title {
+    padding-top: $gutter-container;
+  }
+}

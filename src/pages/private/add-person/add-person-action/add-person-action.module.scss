@@ -1,0 +1,14 @@
+@import "../../../../styles/base/main.scss";
+
+.add-person-action {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  &__button-save {
+    min-width: 200px;
+    margin: 0 12px;
+  }
+  &__button-tree {
+    min-width: 100px;
+  }
+}

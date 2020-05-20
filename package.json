@@ -30,7 +30,23 @@
         "simple-spellchecker": "1.0.0",
         "typescript": "3.6.3",
         "webfontloader": "1.6.28",
-        "yup": "0.27.0"
+        "yup": "0.27.0",
+		"@types/classnames": "2.2.9",
+        "@types/clone": "0.1.30",
+        "@types/fabric": "3.0.2",
+        "@types/jest": "24.0.18",
+        "@types/lodash": "4.14.142",
+        "@types/node": "12.7.11",
+        "@types/react": "16.9.5",
+        "@types/react-dom": "16.9.1",
+        "@types/react-router-dom": "5.1.0",
+        "@types/react-select": "3.0.5",
+        "@types/react-swipeable-views": "0.13.0",
+        "@types/react-virtualized": "9.21.4",
+        "@types/webfontloader": "1.6.29",
+        "browserslist": "4.7.0",
+        "caniuse-lite": "1.0.30000999",
+        "source-map-explorer": "2.1.0"
     },
     "scripts": {
         "analyze": "source-map-explorer 'build/static/js/*.js'",
@@ -55,21 +71,6 @@
         ]
     },
     "devDependencies": {
-        "@types/classnames": "2.2.9",
-        "@types/clone": "0.1.30",
-        "@types/fabric": "3.0.2",
-        "@types/jest": "24.0.18",
-        "@types/lodash": "4.14.142",
-        "@types/node": "12.7.11",
-        "@types/react": "16.9.5",
-        "@types/react-dom": "16.9.1",
-        "@types/react-router-dom": "5.1.0",
-        "@types/react-select": "3.0.5",
-        "@types/react-swipeable-views": "0.13.0",
-        "@types/react-virtualized": "9.21.4",
-        "@types/webfontloader": "1.6.29",
-        "browserslist": "4.7.0",
-        "caniuse-lite": "1.0.30000999",
-        "source-map-explorer": "2.1.0"
+        
     }
 }
